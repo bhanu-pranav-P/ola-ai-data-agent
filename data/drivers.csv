@@ -1,0 +1,26 @@
+driver_id,driver_name,city,vehicle_type,driver_rating,total_trips
+2001,Ramesh Khan,Pune,SUV,3.9,1930
+2002,Aditya Sharma,Mumbai,SUV,5.0,881
+2003,Sneha Verma,Pune,SUV,4.8,2229
+2004,Karthik Iyer,Pune,SUV,4.7,2359
+2005,Aarav Singh,Pune,SUV,4.4,608
+2006,Meera Reddy,Delhi,Mini,4.1,472
+2007,Anjali Rao,Bengaluru,Mini,5.0,2331
+2008,Vikram Pillai,Mumbai,Auto,4.9,826
+2009,Sanjay Verma,Delhi,Auto,5.0,2358
+2010,Deepak Khan,Mumbai,Auto,5.0,1679
+2011,Sanjay Rao,Hyderabad,Mini,4.1,412
+2012,Aarav Singh,Delhi,Sedan,4.5,179
+2013,Deepak Pillai,Bengaluru,Mini,4.1,278
+2014,Rohan Mehta,Delhi,Sedan,4.1,2138
+2015,Ritu Iyer,Mumbai,Auto,4.1,2087
+2016,Karthik Patel,Hyderabad,Mini,4.6,1601
+2017,Pooja Rao,Hyderabad,Mini,4.6,553
+2018,Nikhil Das,Bengaluru,SUV,4.8,597
+2019,Karthik Reddy,Mumbai,Auto,4.0,901
+2020,Aditya Reddy,Delhi,Mini,4.3,551
+2021,Manoj Mehta,Bengaluru,Mini,5.0,1118
+2022,Pooja Rao,Mumbai,Auto,4.1,1792
+2023,Ananya Gupta,Bengaluru,Mini,5.0,1236
+2024,Meera Gupta,Hyderabad,Auto,4.0,1365
+2025,Priya Singh,Mumbai,Mini,4.7,384
