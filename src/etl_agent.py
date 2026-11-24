@@ -1,9 +1,7 @@
-"""ETL Analyst agent — a ReAct agent with plain Python tools.
+"""ETL Analyst — ReAct agent with plain Python tools.
 
-Unlike the SQL Analyst (a fixed graph), ETL work is unpredictable: profile
-this file, clean that column, load it there. So this agent uses the ReAct
-pattern — the LLM reasons, picks a tool, looks at the result, and decides
-the next step until the task is done.
+ETL requests are too unpredictable for a fixed graph, so this one uses
+ReAct: reason, pick a tool, look at the result, repeat.
 """
 
 import os

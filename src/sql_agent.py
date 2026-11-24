@@ -53,6 +53,7 @@ Rules:
 - Add a LIMIT when the question doesn't ask for an aggregate."""
 
     sql = llm.invoke(prompt).content.strip().strip("`").replace("sql\n", "", 1).strip()
+    # print("Generated SQL:", sql)  # uncomment when a question gives a weird answer
     return {"generated_sql": sql, "error": None}
 
 

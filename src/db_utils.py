@@ -13,6 +13,9 @@ from config import settings
 _engine = None
 
 # anything that changes data or structure is banned for the SQL agent
+# TODO: the keyword check is regex-based and could probably be fooled by a
+# clever query. For a portfolio project it's fine, but a real deployment
+# should also run with a read-only DB user.
 BANNED_KEYWORDS = [
     "insert", "update", "delete", "drop", "alter", "truncate",
     "create", "grant", "revoke", "copy", "vacuum", "analyze",

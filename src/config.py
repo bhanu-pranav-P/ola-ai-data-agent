@@ -1,4 +1,4 @@
-"""App settings, loaded from .env (see .env.example)."""
+# Settings, loaded from .env (see .env.example)
 
 import os
 

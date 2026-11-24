@@ -1,9 +1,4 @@
-"""Pydantic models shared by the agents.
-
-The SQL agent passes its working state through a LangGraph graph, and the
-judge returns a structured verdict instead of free text — that's what makes
-the retry loop reliable.
-"""
+"""Pydantic models shared by the agents."""
 
 from typing import Any, Optional
 
