@@ -9,7 +9,7 @@ English, and a small team of AI agents figures out what to do with them:
   → the **ETL Analyst** picks up its tools and does the data work.
 - A **Router Agent** reads every request first and sends it to the right specialist.
 
-The SQL Analyst doesn't just fire off one query and hope for the best — an
+The SQL Analyst doesn't just fire off one query and hope for the best, an
 **LLM-as-a-Judge** step reviews the SQL and the result, and if the answer looks wrong
 the agent rewrites the query and tries again (up to 2 retries).
 
@@ -25,31 +25,6 @@ structured state (Pydantic), and a self-checking loop instead of blind one-shot 
 The sample data is modelled on a ride-hailing company (Ola-style): bookings,
 customers and drivers for a few Indian cities.
 
-## Architecture
-
-```
-                        ┌─────────────────┐
-            question ──►│  Router Agent   │  classifies intent
-                        └───────┬─────────┘
-                   ┌────────────┴────────────┐
-                   ▼                         ▼
-        ┌────────────────────┐    ┌────────────────────┐
-        │   SQL Analyst      │    │    ETL Analyst     │
-        │   (LangGraph)      │    │    (ReAct agent)   │
-        │                    │    │                    │
-        │  generate SQL      │    │  tools:            │
-        │       ↓            │    │   - profile a CSV  │
-        │  run query         │    │   - clean a CSV    │
-        │       ↓            │    │   - load to DB     │
-        │  LLM judge ──┐     │    │   - table summary  │
-        │       ↑      │fail │    └─────────┬──────────┘
-        │       └──────┘     │              │
-        │  format answer     │              │
-        └─────────┬──────────┘              │
-                  └────────────┬────────────┘
-                               ▼
-                      PostgreSQL (Docker)
-```
 
 ## Project structure
 
