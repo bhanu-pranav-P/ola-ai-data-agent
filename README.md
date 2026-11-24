@@ -70,7 +70,8 @@ customers and drivers for a few Indian cities.
 ├── examples/
 │   └── sample_questions.md
 └── tests/
-    └── test_sql_guard.py
+    ├── test_sql_guard.py
+    └── test_router.py
 ```
 
 ## Getting started
